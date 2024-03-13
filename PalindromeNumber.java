@@ -40,41 +40,41 @@ public class PalindromeNumber {
         
     }
 
-    static boolean isPalindrome(int x) {
-        if(x < 0){
-            return false;
-        }
-        StringBuilder numeroStringOriginal = new StringBuilder();
-        StringBuilder numeroStringreverso = new StringBuilder();
-        numeroStringOriginal.append(x);
-        numeroStringreverso.append(x);
-        numeroStringreverso = numeroStringreverso.reverse();
-        if (numeroStringOriginal.toString().equals(numeroStringreverso.toString())){
-            return true;
-        }
-        return false;
-        
-        
-    }
-
     // static boolean isPalindrome(int x) {
-    //     if (x < 0){
+    //     if(x < 0){
     //         return false;
-    //     } 
-    //     int numeroOriginal = x;
-    //     int numeroReverso = 0;
-
-    //     while (x != 0) {
-    //         int digito = x % 10;
-    //         numeroReverso = numeroReverso * 10 + digito;
-    //         x = x / 10;
     //     }
-        
-    //     if (numeroOriginal == numeroReverso){
+    //     StringBuilder numeroStringOriginal = new StringBuilder();
+    //     StringBuilder numeroStringreverso = new StringBuilder();
+    //     numeroStringOriginal.append(x);
+    //     numeroStringreverso.append(x);
+    //     numeroStringreverso = numeroStringreverso.reverse();
+    //     if (numeroStringOriginal.toString().equals(numeroStringreverso.toString())){
     //         return true;
-    //     } 
-
+    //     }
     //     return false;
         
+        
     // }
+
+    static boolean isPalindrome(int x) {
+        if (x < 0){
+            return false;
+        } 
+        int numeroOriginal = x;
+        int numeroReverso = 0;
+
+        while (x != 0) {
+            int digito = x % 10;
+            numeroReverso = numeroReverso * 10 + digito;
+            x = x / 10;
+        }
+        
+        if (numeroOriginal == numeroReverso){
+            return true;
+        } 
+
+        return false;
+        
+    }
 }
