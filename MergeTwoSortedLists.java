@@ -33,8 +33,10 @@ public class MergeTwoSortedLists {
     
 
     public static void main(String[] args) {
-        ListNode list1 = new ListNode(1, new ListNode(2, new ListNode(4)));
-        ListNode list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+        // ListNode list1 = new ListNode(1, new ListNode(2, new ListNode(4)));
+        // ListNode list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+        ListNode list1 = new ListNode();
+        ListNode list2 = new ListNode();
 
         ListNode result = mergeTwoLists(list1, list2);
         while (result != null) {
@@ -46,6 +48,10 @@ public class MergeTwoSortedLists {
     static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode list3 = new ListNode();
         List<Integer> numero = new ArrayList<>();
+
+        if(list1 == null && list2== null){
+            return null;
+        }
         while (list1 != null) {
             numero.add(list1.val);
             list1 = list1.next;
@@ -57,19 +63,17 @@ public class MergeTwoSortedLists {
         }
 
         numero = numero.stream().sorted().toList();
+        ListNode anterior = null;
+        for(int i = numero.size()-1; i >= 0; i --){
 
-        for(int i = 0; i < numero.size(); i ++){
-            list3 = new ListNode(numero.get(i), list3);
+            anterior = new ListNode(numero.get(i), anterior);
+            list3 = anterior;
+            
+            
+            
+
         }
-
-
-        
-        
-        
-
-
-        return list3;
-        
+        return list3;  
     }
 
    static class ListNode {
