@@ -1,3 +1,4 @@
+package java;
 /**
  * AddTwoNumbers
  * https://leetcode.com/problems/middle-of-the-linked-list/solutions/4835201/easy-code-with-100-beats-with-c-beginner-friendly/?envType=daily-question&envId=2024-03-07
