@@ -11,7 +11,13 @@ func main() {
 	//
 	//fmt.Println(goAtividades.IsValid("()[]{}"))
 
-	nums := []int{1, 1, 2, 2, 3, 3, 4, 5}
-	goAtividades.RemoveDuplicates(nums)
-	fmt.Println(nums)
+	nums := []int{1, 3, 5, 6}
+	//nums = [1,3,5,6]
+	//goAtividades.RemoveDuplicates(nums)
+	//fmt.Println(nums)
+	//haystack := "mississippi"
+	//needle := "issip"
+	//numero := goAtividades.StrStr(haystack, needle)
+
+	fmt.Println(goAtividades.SearchInsert(nums, 7))
 }
