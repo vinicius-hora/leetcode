@@ -11,7 +11,6 @@ func main() {
 	//
 	//fmt.Println(goAtividades.IsValid("()[]{}"))
 
-	nums := []int{1, 3, 5, 6}
 	//nums = [1,3,5,6]
 	//goAtividades.RemoveDuplicates(nums)
 	//fmt.Println(nums)
@@ -19,5 +18,5 @@ func main() {
 	//needle := "issip"
 	//numero := goAtividades.StrStr(haystack, needle)
 
-	fmt.Println(goAtividades.SearchInsert(nums, 7))
+	fmt.Println(goAtividades.LengthOfLastWord("   fly me   to   the moon  "))
 }
