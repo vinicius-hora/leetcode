@@ -17,6 +17,7 @@ func main() {
 	//haystack := "mississippi"
 	//needle := "issip"
 	//numero := goAtividades.StrStr(haystack, needle)
+	digits := []int{9, 9}
 
-	fmt.Println(goAtividades.LengthOfLastWord("   fly me   to   the moon  "))
+	fmt.Println(goAtividades.PlusOne(digits))
 }
