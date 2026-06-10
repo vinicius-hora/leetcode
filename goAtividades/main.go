@@ -17,7 +17,9 @@ func main() {
 	//haystack := "mississippi"
 	//needle := "issip"
 	//numero := goAtividades.StrStr(haystack, needle)
-	digits := []int{9, 9}
+	//digits := []int{9, 9}
 
-	fmt.Println(goAtividades.PlusOne(digits))
+	a := "1010"
+	b := "1011"
+	fmt.Println(goAtividades.AddBinary(a, b))
 }
